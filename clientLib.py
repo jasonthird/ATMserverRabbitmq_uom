@@ -2,6 +2,7 @@
 
 import pika
 import uuid
+import decimal
 
 
 class Atm(object):
@@ -63,14 +64,14 @@ class Atm(object):
 
 
 """ example usage
+
 atm = Atm()
 
 x = atm.auth("userbbrgf", 8152)
 print(x)
 print(atm.balance(x))
-print(atm.withdraw(x, 100))
+print(atm.withdraw(x, 100.4213))
 print(atm.balance(x))
 print(atm.deposit(x, 100))
 print(atm.balance(x))
-
 """
