@@ -3,8 +3,10 @@ import pika
 from SqlConnection import Sql
 from decimal import Decimal
 
+hostIp = 'localhost'
+
 connection = pika.BlockingConnection(
-    pika.ConnectionParameters(host='localhost'))
+    pika.ConnectionParameters(host=hostIp))
 
 channel = connection.channel()
 
